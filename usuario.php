@@ -1,3 +1,3 @@
 <?php
 
-echo "Sou o usuario";
+echo "Sou o Usuário";
