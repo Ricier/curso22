@@ -29,7 +29,7 @@
                                     <div class="row mb-3"> <!-- $id  -->
                                         <label align="center" class="col-md-2 col-sm-12 col-form-label">ID</label>
                                             <div class="col-md-2 col-sm-12">
-                                                <input type="number" class="form-control" placeholder="select">
+                                                <input id="idBanco" type="text" class="form-control">
                                             </div>
                                     </div>
                                     <div class="row mb-3"><!-- $status -->
@@ -45,14 +45,14 @@
                                     <div class="row mb-3"> <!-- $name  -->
                                         <label align="center" class="col-md-2 col-sm-12 col-form-label">Name:</label>
                                             <div class="col-md-3 col-sm-12">
-                                                <input class="form-control" type="text">
+                                                <input id="idName" class="form-control" type="text">
                                             </div>
                                     </div>
                                 
                                     <div class="row mb-3"><!-- $mail -->
                                         <label align="center" class="col-md-2 col-sm-12 col-form-label">E-mail:</label>
                                             <div class="col-md-3 col-sm-12">
-                                                <input class="form-control" type="email">
+                                                <input id="idEmail" class="form-control" type="email">
                                             </div>
                                     </div>
                                     <div class="row mb-3"><!-- $phone -->
@@ -203,41 +203,8 @@
                                 <td>odair@curso.com</td>
                                 <td>(54) 91234-5678</td>
                                 <td>
-                                    <button class="btnEditar btn btn-primary" value="1">Edit</button>
-                                    <button class="btnExcluir btn btn-primary" value="1">Delete</button>
-                                </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                                <td>João Gordo</td>
-                                <td>CPF</td>
-                                <td>fatguy@mcdonalds.com</td>
-                                <td>(51) 99988-7766</td>
-                                <td>
-                                    <button class="btnEditar btn btn-primary" value="2">Edit</button>
-                                    <button class="btnExcluir btn btn-primary" value="2">Delete</button>
-                                </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                                <td>Larry the Bird</td>
-                                <td>CNPJ</td>
-                                <td>comercial@larry.com</td>
-                                <td>(88) 98745-6123</td>
-                                <td>
-                                    <button class="btnEditar btn btn-primary" value="3">Edit</button>
-                                    <button class="btnExcluir btn btn-primary" value="3">Delete</button>
-                                </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                                <td>Escola Infoserv</td>
-                                <td>CNPJ</td>
-                                <td>bento@escolainfoserv.com.br</td>
-                                <td>(54) 3452-6666</td>
-                                <td>
-                                    <button class="btnEditar btn btn-primary" value="4">Edit</button>
-                                    <button class="btnExcluir btn btn-primary" value="4">Delete</button>
+                                    <button class="btnEditar btn btn-primary" value="5">Edit</button>
+                                    <button class="btnExcluir btn btn-primary" value="5">Delete</button>
                                 </td>
                         </tr>
                     </tbody>
