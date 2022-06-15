@@ -1,3 +1,27 @@
+<?php
+$dadosPessoa =
+ [   
+    [
+            "id" => 10,
+            "nome" => "Odair",
+            "email" => "odair@curso.com",
+            "phone" => "54 912345678",
+            "gender" => "M",
+            "type" => "CPF",
+            "cep" => "95720123"
+    ],
+    [
+            "id" => 5,
+            "nome" => "Júnior",
+            "email" => "junior@curso.com",
+            "phone" => "54 987618526",
+            "gender" => "M",
+            "type" => "CPF",
+            "cep" => "78549000"
+    ]
+];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -196,17 +220,23 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                                <td>Odair Jr.</td>
-                                <td>CPF</td>
-                                <td>odair@curso.com</td>
-                                <td>(54) 91234-5678</td>
+                        <?php
+                        foreach($dadosPessoa as $pessoa) {
+                        $html = (
+                        '<tr>
+                            <th scope="row">' . $pessoa["id"]. '</th>
+                                <td>'. $pessoa["name"] .'</td>
+                                <td>' . $pessoa["email"]. '</td>
+                                <td>' . $pessoa["phone"]. '</td>
                                 <td>
-                                    <button class="btnEditar btn btn-primary" value="5">Edit</button>
-                                    <button class="btnExcluir btn btn-primary" value="5">Delete</button>
+                                    <button class="btnEditar btn btn-primary" value="' . $pessoa["id"]. '">Edit</button>"
+                                    <button class="btnExcluir btn btn-primary" value="' . $pessoa["id"].'">Delete</button>"
                                 </td>
-                        </tr>
+                        </tr>'
+                        );
+                        echo $html;
+                    };
+                        ?>
                     </tbody>
                 </table>
             </div>
